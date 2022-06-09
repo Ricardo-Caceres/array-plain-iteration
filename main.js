@@ -1,7 +1,10 @@
 import "./style.css";
-import { operation_data } from "./operation_data.js";
+import operation_data from "./operation_data.js";
 
 document.querySelector("#app").innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
+  <h1>Plain Arrays!</h1>
 `;
+// let arr = [6, [1, [2, 3], 4], 5];
+// let arr1 = [1, [2, [3, [4, 5]]]];
+let arr2 = [[[1, 2], 3], 4, 5];
+operation_data(arr2);
